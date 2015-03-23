@@ -1,0 +1,19 @@
+{
+  "name": "lineOfBusinessAngularJs",
+  "version": "0.0.0",
+  "authors": [
+    "Maarten Berkenbosch <maarten@beebase.nl>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "js",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4"
+  }
+}
