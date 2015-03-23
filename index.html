@@ -5,12 +5,15 @@
 	<title></title>
 	<link rel="stylesheet" href="css/bootstrap.css"/>
 	<link rel="stylesheet" href="css/app.css"/>
+
 	<!--library-->
+	<script src="js/jquery/dist/jquery.min.js"></script>
 	<script src="js/angular/angular.min.js"></script>
 	<script src="js/angular-resource/angular-resource.min.js"></script>
 	<script src="js/angular-mocks/angular-mocks.js"></script>
 	<script src="js/angular-route/angular-route.min.js"></script>
 	<script src="js/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script src="js/bootstrap/dist/js/bootstrap.min.js"></script>
 	<!--services-->
 	<script src="common/services/common.services.js"></script>
 	<script src="common/services/productResource.js"></script>
@@ -19,6 +22,31 @@
 	<script src="app/products/productListCtrl.js"></script>
 </head>
 <body ng-app="productManagement">
-	<div ui-view></div>
+	<nav class="navbar navbar-inverse">
+		<div class="container">
+			<a class="navbar-brand"
+			   ui-sref="home">Acme Product Management</a>
+			<div class="navbar-header">
+				<button type="button"
+				        class="navbar-toggle"
+				        data-toggle="collapse"
+				        data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a ui-sref="productList">Product List </a></li>
+					<li><a ui-sref="productEdit({productId:0})"><i class="glyphicon glyphicon-plus">Add Product</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+		<div ui-view></div>
+	</div>
 </body>
 </html>
