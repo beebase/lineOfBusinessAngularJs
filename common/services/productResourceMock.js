@@ -72,7 +72,7 @@
       }
     ];
 
-    var productUrl = "/api/products"
+    var productUrl = "/api/products";
 
     $httpBackend.whenGET(productUrl).respond(products);
 
@@ -90,7 +90,6 @@
             break;
           }
         }
-        ;
       }
       return [200, product, {}];
     });
@@ -111,7 +110,6 @@
             break;
           }
         }
-        ;
       }
       return [200, product, {}];
     });

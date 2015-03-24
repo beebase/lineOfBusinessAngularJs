@@ -31,7 +31,8 @@
     };
 
     vm.submit = function () {
-      vm.product.$save(function (data) {
+      //noinspection JSUnresolvedFunction
+      vm.product.$save(function (data) {   // jshint ignore:line
           toastr.success("Save Successful");
         }
       );
